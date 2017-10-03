@@ -1,0 +1,2 @@
+# www
+Static web site
