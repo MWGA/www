@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
   </head>
 
@@ -111,7 +112,7 @@
             -->
             <a href="http://archive.openflow.org/wp/learnmore/">
               <img class="rounded-circle img-fluid" src="img/logos/3.jpg" alt="">
-            </a>  
+            </a>
             </span>
             <h4 class="service-heading">OpenFlow</h4>
             <p class="text-muted">Komunikačný protokol ktorý slúži ako rozhranie medzi dátovou a kontrovnou rovinou v SDN</p>
@@ -530,6 +531,35 @@
             </div>
           </div>
         </div>
+		<div class="row">
+          <div class="col-sm-4">
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/rastislav-bencel.jpg" alt="Rastislav Bencel">
+              <h4>Ing. Rastislav Bencel</h4>
+              <p class="text-muted">Product owner</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="mailto:rbencel@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+        </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
@@ -576,6 +606,23 @@
                 Fakulta informatiky a informačných technológií STU v Bratislave<br>
                 Ilkovičova 2<br>
                 842 16 Bratislava 4<br></h3>
+                <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 48.1538693, lng: 17.0696869};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvE9n9MduMJ1zYpMuFigoeHfx0VhWOTzI&callback=initMap">
+    </script>
           </div>
         </div>
         <div class="row">
@@ -619,12 +666,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
+            <span class="copyright">MWGA - Make WiFi Great Again &copy; 2017</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="twitter.com/mwga2">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
@@ -643,10 +690,10 @@
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
+                <a href="http://fiit.stuba.sk">@ FIIT STU</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
+                <a href="#">...</a>
               </li>
             </ul>
           </div>
