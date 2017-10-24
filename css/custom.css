@@ -6,3 +6,16 @@
 #contact{
 	padding: 50px 0;
 }
+
+.portfolio-caption h4{
+	color:#000;
+}
+
+.portfolio-caption h4:hover{
+	color:#fed136;
+	
+}
+
+#zapisnice a{
+	text-decoration: none;
+}
